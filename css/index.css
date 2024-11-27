@@ -2,10 +2,6 @@ img {
   width: 100%;
 }
 
-.container {
-  /* border: 1px solid black; */
-}
-
 .portfolio__links button::after {
   position: absolute;
   content: "";
@@ -90,4 +86,88 @@ img {
 .about__img:hover {
   transform: scale(0.9);
   transition: all 2s;
+}
+.custom .card {
+  transition: 0.3s ease-in-out;
+  position: relative;
+}
+a {
+  transition: 0.3s ease-in-out;
+}
+a:hover {
+  color: blue;
+}
+.custom .wrapper {
+  height: 610px;
+}
+.custom .card:hover {
+  background-color: white;
+  color: black;
+  padding-top: 48px;
+  padding-bottom: 46px;
+  height: 336px;
+}
+.custom .card p {
+  transition: 0.3s ease-in-out;
+}
+.custom .card:hover p {
+  color: #391400a3;
+}
+.custom .card:hover .img1 {
+  top: 0;
+  width: 80px;
+  background-color: #ef6c57;
+  padding: 24px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  display: block;
+}
+
+.custom .card:hover .img2 {
+  top: 0;
+  width: 80px;
+  background-color: #ef6c57;
+  padding: 24px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  display: block;
+}
+.website .btn {
+  transition: 0.3s ease-in-out;
+}
+.website .btn:hover {
+  background-color: aqua;
+  color: gray;
+}
+.webflow .card {
+  transition: 0.3s ease-in-out;
+}
+.webflow .card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+@media (min-width: 1200px) {
+  .webflow .grid {
+    position: relative;
+  }
+  .webflow .card {
+    position: absolute;
+    width: 34%;
+  }
+  .webflow .card:nth-child(3) {
+    right: 0;
+  }
+  .webflow .card:nth-child(2) {
+    left: 33%;
+  }
+  .custom .wrapper {
+    height: 336px;
+  }
+  .custom .card:hover {
+    background-color: white;
+    color: black;
+    padding-top: 48px;
+    padding-bottom: 46px;
+    height: 336px;
+  }
 }
