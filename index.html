@@ -4,16 +4,350 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./css/index.css" />
     <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/index.css" />
     <title>34-dars</title>
   </head>
   <body>
     <header></header>
     <main>
-      <section class="hero">
-        <div class="container border">
-          <p>salom</p>
+      <section class="portfolio pt-[61px] pb-[104px] d:pt-[48px] d:pb-[96px]">
+        <div class="container">
+          <div class="flex flex-col items-center portfolio__wrapper">
+            <p
+              class="portfolio__sub-title text-center leading-[32px] tracking-[3px] text-[16px] font-[400] text-redish"
+            >
+              Portfolio
+            </p>
+            <h2
+              class="mt-[18px] d:mt-[20px] text-center font-[800] text-[40px] d:text-[56px] leading-[48px] d:leading-[64px] tracking-[-0.01em] text-text_black portfolio__title"
+            >
+              Latest Work
+            </h2>
+            <div class="portfolio__links w-full mt-[36px]">
+              <!-- Desktop Layout -->
+              <div class="items-center justify-between hidden d:flex">
+                <button
+                  class="relative flex items-baseline text-[16px] leading-[32px] text-dark_gray"
+                >
+                  Show All
+                  <sup
+                    class="text-[14px] font-[400] leading-[24px] text-dark_gray"
+                    >14</sup
+                  >
+                </button>
+                <button
+                  class="relative flex items-baseline text-[16px] leading-[32px] text-dark_gray"
+                >
+                  Design
+                  <sup
+                    class="text-[14px] font-[400] leading-[24px] text-dark_gray"
+                    >6</sup
+                  >
+                </button>
+                <button
+                  class="relative flex items-baseline text-[16px] leading-[32px] text-dark_gray"
+                >
+                  Branding
+                  <sup
+                    class="text-[14px] font-[400] leading-[24px] text-dark_gray"
+                    >4</sup
+                  >
+                </button>
+                <button
+                  class="relative flex items-baseline text-[16px] leading-[32px] text-dark_gray"
+                >
+                  Illustration
+                  <sup
+                    class="text-[14px] font-[400] leading-[24px] text-dark_gray"
+                    >3</sup
+                  >
+                </button>
+                <button
+                  class="relative flex items-baseline text-[16px] leading-[32px] text-dark_gray"
+                >
+                  Motion
+                  <sup
+                    class="text-[14px] font-[400] leading-[24px] text-dark_gray"
+                    >1</sup
+                  >
+                </button>
+              </div>
+
+              <!-- Mobile Layout -->
+              <form action="#" class="mt-[35px]">
+                <select
+                  name="select"
+                  id="select"
+                  class="w-[100%] px-[16px] py-[8px] d:hidden"
+                  aria-label="Choose an option"
+                >
+                  <option value="show-all">Show All</option>
+                  <option value="design">Design</option>
+                  <option value="branding">Branding</option>
+                  <option value="illustration">Illustration</option>
+                  <option value="motion">Motion</option>
+                </select>
+              </form>
+            </div>
+
+            <div
+              class="grid justify-center mx-auto mt-[48px] grid-cols-1 d:grid-rows-2 d:grid-cols-3 gap-y-[32px] gap-x-[30px] items-center portfolio__cards"
+            >
+              <div class="relative rounded-[6px] width-[100%] card">
+                <div class="card__img rounded-[6px]">
+                  <img
+                    class="rounded-[6px]"
+                    src="./assets/images/portfolio__card-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="absolute bottom-[51px] left-[48px] card__info">
+                  <div class="card__link">
+                    <a href="#">
+                      <span
+                        class="card__link-text bg-white rounded-[19px] py-[3px] px-[15.5px] font-[400] text-[16px] leading-[32px] text_text-black"
+                      >
+                        Design</span
+                      >
+                    </a>
+                  </div>
+                  <div
+                    class="card__title font-[800] text-[40px] leading-[48px] text-white"
+                  >
+                    SOFA
+                  </div>
+                </div>
+              </div>
+
+              <div class="relative rounded-[6px] card">
+                <div class="card__img rounded-[6px]">
+                  <img
+                    class="rounded-[6px]"
+                    src="./assets/images/portfolio__card-2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="absolute bottom-[51px] left-[48px] card__info">
+                  <div class="card__link">
+                    <a href="#">
+                      <span
+                        class="card__link-text bg-white rounded-[19px] py-[3px] px-[15.5px] font-[400] text-[16px] leading-[32px] text_text-black"
+                      >
+                        Branding</span
+                      >
+                    </a>
+                  </div>
+                  <div
+                    class="card__title font-[800] text-[40px] leading-[48px] text-white"
+                  >
+                    KeyBoard
+                  </div>
+                </div>
+              </div>
+
+              <div class="relative rounded-[6px] hidden d:block card">
+                <div class="card__img rounded-[6px]">
+                  <img
+                    class="rounded-[6px]"
+                    src="./assets/images/portfolio__card-3.png"
+                    alt=""
+                  />
+                </div>
+                <div class="absolute bottom-[51px] left-[48px] card__info">
+                  <div class="card__link">
+                    <a href="#">
+                      <span
+                        class="card__link-text bg-white rounded-[19px] py-[3px] px-[15.5px] font-[400] text-[16px] leading-[32px] text_text-black"
+                      >
+                        Illustration</span
+                      >
+                    </a>
+                  </div>
+                  <div
+                    class="card__title font-[800] text-[40px] leading-[48px] text-white"
+                  >
+                    Work Media
+                  </div>
+                </div>
+              </div>
+
+              <div class="relative rounded-[6px] hidden d:block card">
+                <div class="card__img rounded-[6px]">
+                  <img
+                    class="rounded-[6px]"
+                    src="./assets/images/portfolio__card-4.png"
+                    alt=""
+                  />
+                </div>
+                <div class="absolute bottom-[51px] left-[48px] card__info">
+                  <div class="card__link">
+                    <a href="#">
+                      <span
+                        class="card__link-text bg-white rounded-[19px] py-[3px] px-[15.5px] font-[400] text-[16px] leading-[32px] text_text-black"
+                      >
+                        Motion</span
+                      >
+                    </a>
+                  </div>
+                  <div
+                    class="card__title font-[800] text-[40px] leading-[48px] text-white"
+                  >
+                    DDDone
+                  </div>
+                </div>
+              </div>
+
+              <div class="relative rounded-[6px] hidden d:block card">
+                <div class="card__img rounded-[6px]">
+                  <img
+                    class="rounded-[6px]"
+                    src="./assets/images/portfolio__card-5.png"
+                    alt=""
+                  />
+                </div>
+                <div class="absolute bottom-[51px] left-[48px] card__info">
+                  <div class="card__link">
+                    <a href="#">
+                      <span
+                        class="card__link-text bg-white rounded-[19px] py-[3px] px-[15.5px] font-[400] text-[16px] leading-[32px] text_text-black"
+                      >
+                        Design</span
+                      >
+                    </a>
+                  </div>
+                  <div
+                    class="card__title font-[800] text-[40px] leading-[48px] text-white"
+                  >
+                    Abstract
+                  </div>
+                </div>
+              </div>
+
+              <div class="relative rounded-[6px] card">
+                <div class="card__img rounded-[6px]">
+                  <img
+                    class="rounded-[6px]"
+                    src="./assets/images/portfolio__card-6.png"
+                    alt=""
+                  />
+                </div>
+                <div class="absolute bottom-[51px] left-[48px] card__info">
+                  <div class="card__link">
+                    <a href="#">
+                      <span
+                        class="card__link-text bg-white rounded-[19px] py-[3px] px-[15.5px] font-[400] text-[16px] leading-[32px] text_text-black"
+                      >
+                        Design</span
+                      >
+                    </a>
+                  </div>
+                  <div
+                    class="card__title font-[800] text-[40px] leading-[48px] text-white"
+                  >
+                    SOFA
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="inline-block text-center border-[1px] border-[#FFFFFF4B] rounded-[6px] mt-[64px] px-[30px] py-[17px] text-[19px] font-[900] bg-bg_dark_blue text-white portfolio__btn"
+            >
+              Explore More
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="get-started pb-[16px] bg-bg_cream">
+        <div class="container">
+          <div
+            class="relative grid grid-cols-1 px-[56px] gap-y-[20px] d:grid-cols-3 d:grid-rows-1 d:gap-x-[30px] d:items-center pt-[92px] d:pl-[100px] d:pr-[68px] d:py-[47px] get-started__wrapper"
+          >
+            <div class="get-started__info pt-[45px] pb-[24px]">
+              <p
+                class="get-started__info-sub-title leading-[32px] tracking-[3px] text-[16px] font-[400] text-redish"
+              >
+                GET STARTED
+              </p>
+              <h2
+                class="get-started__info-title mt-[13px] font-[700] text-[24px] leading-[32px] text-dark_black"
+              >
+                I Help Companies Move Faster
+              </h2>
+              <div
+                class="get-started__info-btn inline-block text-center border-[1px] border-none rounded-[6px] mt-[23px] px-[30px] py-[18px] text-[14px] font-[900] leading-[14.5px] bg-redish text-white portfolio__btn"
+              >
+                CONTACT ME
+              </div>
+            </div>
+
+            <div class="get-started__info-desc d:pb-[15px]">
+              Put themselves in the merchant's shoes. It is meant to partner on
+              the long run.
+            </div>
+
+            <div class="get-started__img d:pt-[29px]">
+              <img src="./assets/images/get-started__img.svg" alt="" />
+            </div>
+
+            <div
+              class="absolute translate-y-[-48%] translate-x-[35%] d:translate-y-[-36%] d:translate-x-[55%] items-center inline-block d:top-[-20px] get-started__positioned-img"
+            >
+              <img
+                class="w-[148px] h-[148px] star"
+                src="./assets/icons/star.svg"
+                alt=""
+              />
+              <div
+                class="absolute z-2 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] get-started__absolute-img"
+              >
+                <img src="./assets/icons/gift.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about pt-[177px] bg-bg_dark_blue">
+        <div class="container">
+          <div
+            class="grid grid-cols-1 gap-[4px] d:grid-cols-2 d:gap-[125px] d:grid-row-1 about__wrapper"
+          >
+            <div class="order-2 about__info d:pt-[42px]">
+              <p
+                class="about__info-sub-title leading-[32px] tracking-[3px] text-[16px] font-[400] text-redish"
+              >
+                About
+              </p>
+              <h2
+                class="about__info-title mt-[17px] text-[40px] d:text-[56px] font-[800] leading-[48px] d:leading-[64px] tracking-[-0.01em] text-white"
+              >
+                An Experience Webflow Expert
+              </h2>
+              <h3
+                class="about__info-special mt-[29px] text-[20px] font-[400] leading-[32px] text-white"
+              >
+                Provides a full service range
+              </h3>
+              <p
+                class="about__info-desc mt-[18px] text-[16px] font-[400] text-white opacity-[60%] leading-[32px]"
+              >
+                Ability to put themselves in the merchant's shoes. It is meant
+                to partner on the long run, and work as an extension of the
+                merchant's team.
+              </p>
+              <button
+                class="inline-block rounded-[6px] mt-[31px] px-[32px] py-[18px] text-white font-[900] leading-[14px] bg-pink about__info-btn"
+              >
+                ABOUT ME
+              </button>
+            </div>
+            <div class="order-1 about__img">
+              <img src="./assets/images/about__img.svg" alt="" />
+            </div>
+          </div>
         </div>
       </section>
     </main>

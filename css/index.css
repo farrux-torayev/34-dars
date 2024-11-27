@@ -1,0 +1,93 @@
+img {
+  width: 100%;
+}
+
+.container {
+  /* border: 1px solid black; */
+}
+
+.portfolio__links button::after {
+  position: absolute;
+  content: "";
+  position: absolute;
+  background-color: #6a3093;
+  width: 0%;
+  height: 2px;
+  bottom: 0px;
+}
+.portfolio__links button:hover::after {
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  transition: all 0.5s;
+}
+.portfolio__links button:hover {
+  scale: 1.2;
+  transition: all 0.5s;
+  color: #000428;
+}
+
+.portfolio__cards .card:hover {
+  transform: translateY(-15px);
+  scale: 1.05;
+  transition: all 0.5s;
+  box-shadow: 0 0 20px #352f48;
+}
+.about__info-btn:hover {
+  background-image: linear-gradient(
+    to right,
+    #000428 0%,
+    #004e92 51%,
+    #000428 100%
+  );
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  box-shadow: 0 0 20px #eee;
+  transition: all 0.5s;
+}
+
+.get-started__info-btn:hover {
+  background-image: linear-gradient(
+    to right,
+    #6a3093 0%,
+    #a044ff 51%,
+    #6a3093 100%
+  );
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+}
+
+.get-started:hover .get-started__img {
+  transform: scale(1.2);
+  transition: all 1s;
+  transition-timing-function: ease-in-out;
+}
+.get-started .star:hover {
+  transform: rotate(150deg);
+  transition: all 2s;
+  transition-timing-function: ease-in-out;
+}
+
+.portfolio__btn:hover {
+  background-image: linear-gradient(
+    to right,
+    #6a3093 0%,
+    #a044ff 51%,
+    #6a3093 100%
+  );
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+}
+
+.about__img:hover {
+  transform: scale(0.9);
+  transition: all 2s;
+}
