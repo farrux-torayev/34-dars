@@ -12,11 +12,11 @@
     <header>
       <nav class="nav bg-[#28293E] text-white py-[16px]">
         <div class="container">
-          <div class="wrapper flex justify-between items-center">
+          <div class="wrapper flex  justify-between items-center">
             <div>
               <img src="./assets/icons/logo .svg" alt="nav-logo" />
             </div>
-            <ul class="flex gap-[60px] text-[16px] font-[600]">
+            <ul class="d:flex gap-[60px] text-[16px] font-[600] hidden d:block">
               <li>
                 <a href="">
                   <span>About </span>
@@ -38,10 +38,14 @@
                 </a>
               </li>
             </ul>
-            <div class="border w-[138px] rounded-[10px]">
+            <div class="border w-[138px] rounded-[10px] hidden d:block">
               <button class="py-[16px] px-[37.54px] text-[14px] font-[900]">
                 Contact
               </button>
+              
+            </div>
+            <div class="d:hidden">
+              <img src="./assets/icons/menu (1).svg" alt="">
             </div>
           </div>
         </div>
@@ -50,16 +54,16 @@
     <main>
       <section class="hero bg-[#28293E] text-white pt-[100px]">
         <div class="container">
-          <div class="wrapper flex justify-between">
+          <div class="wrapper flex flex-col-reverse d:flex d:flex-row d:justify-between ">
             <div>
-              <p class="text-[#EF6D58] pb-[24px]">Webflow Expert</p>
-              <h2 class="text-[72px] font-[800] pb-[24px]">
-                Making Digital <br />
+              <p class="text-[#EF6D58] pb-[24px] pt-[30px]">Webflow Expert</p>
+              <h2 class="text-[56px] font-[800] pb-[24px] d:text-[72px] ">
+                Making <br class="d:hidden"> Digital <br />
                 Products
               </h2>
               <p class="text-[16px] text-[#FFFFFFA3] pb-[34px]">
-                Agency provides a full service range including technical <br />
-                skills, design, business understanding.
+                Agency provides a full service range <br class="d:hidden"> including technical <br class="hidden d:block" />
+                skills, design, <br class="d:hidden"> business understanding.
               </p>
               <div class="flex gap-[10px]">
                 <button class="py-[16px] px-[22.27px] bg-[#EF6D58] font-[900] rounded-[10px]">Explore Work</button>
